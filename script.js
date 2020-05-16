@@ -51,7 +51,6 @@ let length = parseInt(prompt("How long would you like the password to be(can onl
   for(i = 0; i < length; i+= typesCount) {
     typesArr.forEach(type => {
     const funcName = Object.keys(type)[0];
-    console.log(funcName);
     generatedPassword += randomFunc[funcName]();
     });
   }
